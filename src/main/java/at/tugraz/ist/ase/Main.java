@@ -15,6 +15,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.chocosolver.solver.search.strategy.Search.intVarSearch;
 
+/**
+ * First example
+ */
 public class Main {
     public static void main(String[] args) {
         // 1. Create a Model
