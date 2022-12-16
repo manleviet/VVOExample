@@ -17,6 +17,7 @@ import static org.chocosolver.solver.search.strategy.Search.intVarSearch;
 
 /**
  * First example
+ * - How to use classes: ValueOrdering, ValueVariableOrdering, MFVVOValueSelector, MFVVOVariableSelector
  */
 public class Main {
     public static void main(String[] args) {
@@ -69,7 +70,7 @@ public class Main {
 //                ((IIntVarKB)kb).getIntVars()
         ));
 
-        //Add a plugin to print solutions
+        //Add a monitor to print solutions
         AtomicInteger solutionCounter = new AtomicInteger();
         solver.plugMonitor((IMonitorSolution) () -> {
             solutionCounter.getAndIncrement();
